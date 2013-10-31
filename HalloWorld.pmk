@@ -1,0 +1,12 @@
+$debug = true
+pmk = Pumpkin.Init(weight: 2, color: “orange”)
+pmk.decap()
+=> DEBUG: “The pumpkin was decapitated. Ouch!”
+pmk.clean(pmk.CONTENT)
+=> DEBUG: “The pumpkin’s weight has been reduced!”
+“HALLO\nWORLD!”.each do |char|
+  pmk.SCARY += pmk.stab(pmk.HULL, char)
+end
+pmk.display(pmk.SCARY)
+pmk.lightUp()
+pmk.recap()
